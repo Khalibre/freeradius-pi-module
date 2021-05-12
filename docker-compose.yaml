@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  freeradius-app:
+    image: 'khalibre/freeradius-pi:latest'
+    volumes:
+      - './log:/var/log/freeradius:rw'

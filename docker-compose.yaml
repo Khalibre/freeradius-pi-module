@@ -2,6 +2,8 @@ version: '3'
 
 services:
   freeradius-app:
-    image: 'khalibre/freeradius-pi:latest'
+    image: 'khalibre/freeradius-pi-module:latest'
+    ports:
+      - "1812-1813:1812-1813/udp"
     volumes:
       - './log:/var/log/freeradius:rw'
